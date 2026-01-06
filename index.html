@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evony 24/7 Automation | Professional Account Management</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --bg-dark: #0a0e14;
@@ -41,7 +44,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
+            background-image:
                 linear-gradient(var(--border-color) 1px, transparent 1px),
                 linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
             background-size: 50px 50px;
@@ -51,8 +54,13 @@
         }
 
         @keyframes gridMove {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(50px, 50px);
+            }
         }
 
         .container {
@@ -83,6 +91,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -209,17 +218,32 @@
             animation: fadeIn 0.6s ease-out backwards;
         }
 
-        .service-card:nth-child(1) { animation-delay: 0.1s; }
-        .service-card:nth-child(2) { animation-delay: 0.2s; }
-        .service-card:nth-child(3) { animation-delay: 0.3s; }
-        .service-card:nth-child(4) { animation-delay: 0.4s; }
-        .service-card:nth-child(5) { animation-delay: 0.5s; }
+        .service-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .service-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .service-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .service-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .service-card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
 
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -416,6 +440,59 @@
             font-size: 0.95rem;
         }
 
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 35px 30px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-green);
+            transform: translateY(-5px);
+        }
+
+        .testimonial-stars {
+            color: var(--accent-cyan);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .testimonial-text {
+            color: var(--text-primary);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .author-name {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-green);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -450,6 +527,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="grid-bg"></div>
 
@@ -457,8 +535,9 @@
     <section class="hero">
         <div class="hero-content">
             <h1>24×7 Evony Automation.<br><span class="highlight">Zero Downtime.</span><br>Maximum Gains.</h1>
-            <p class="hero-subtitle">Professional account management with 99% uptime, fully customizable settings, and dedicated technical support. Run your Evony empire while you sleep.</p>
-            
+            <p class="hero-subtitle">Professional account management with 99% uptime, fully customizable settings, and
+                dedicated technical support. Run your Evony empire while you sleep.</p>
+
             <div class="hero-features">
                 <span>24×7 Automated Hosting</span>
                 <span>99% Uptime Guaranteed</span>
@@ -477,23 +556,28 @@
             <div class="services-grid">
                 <div class="service-card">
                     <h3>24×7 Automation</h3>
-                    <p>Your Evony accounts run continuously on dedicated infrastructure. No interruptions, no downtime, no missed rallies.</p>
+                    <p>Your Evony accounts run continuously on dedicated infrastructure. No interruptions, no downtime,
+                        no missed rallies.</p>
                 </div>
                 <div class="service-card">
                     <h3>Custom Configuration</h3>
-                    <p>Every setting tailored to your playstyle. Not presets—actual customization based on your specific goals and strategy.</p>
+                    <p>Every setting tailored to your playstyle. Not presets—actual customization based on your specific
+                        goals and strategy.</p>
                 </div>
                 <div class="service-card">
                     <h3>99% Stable Uptime</h3>
-                    <p>Infrastructure built for reliability. Continuous monitoring and immediate response to any issues that arise.</p>
+                    <p>Infrastructure built for reliability. Continuous monitoring and immediate response to any issues
+                        that arise.</p>
                 </div>
                 <div class="service-card">
                     <h3>Hands-On Management</h3>
-                    <p>Active monitoring and adjustments. This isn't a set-it-and-forget-it service—I keep your accounts optimized.</p>
+                    <p>Active monitoring and adjustments. This isn't a set-it-and-forget-it service—I keep your accounts
+                        optimized.</p>
                 </div>
                 <div class="service-card">
                     <h3>24×7 Tech Support</h3>
-                    <p>Direct access to me for questions, adjustments, or issues. Fast response times when you need changes made.</p>
+                    <p>Direct access to me for questions, adjustments, or issues. Fast response times when you need
+                        changes made.</p>
                 </div>
             </div>
         </div>
@@ -506,7 +590,7 @@
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <div class="pricing-tier">Automation Hosting</div>
+                        <div class="pricing-tier">Basic</div>
                         <div class="pricing-amount">$15</div>
                     </div>
                     <ul class="pricing-features">
@@ -519,7 +603,7 @@
 
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <div class="pricing-tier">Managed Automation</div>
+                        <div class="pricing-tier">Advanced</div>
                         <div class="pricing-amount">$25</div>
                     </div>
                     <ul class="pricing-features">
@@ -532,7 +616,7 @@
 
                 <div class="pricing-card featured">
                     <div class="pricing-header">
-                        <div class="pricing-tier">Boosted Performance</div>
+                        <div class="pricing-tier">Pro</div>
                         <div class="pricing-amount">$35</div>
                     </div>
                     <ul class="pricing-features">
@@ -545,7 +629,7 @@
 
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <div class="pricing-tier">Premium Automation</div>
+                        <div class="pricing-tier">Premium</div>
                         <div class="pricing-amount">$50</div>
                     </div>
                     <ul class="pricing-features">
@@ -590,6 +674,68 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Players Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Been running for 3 months straight. No missed rallies, no downtime
+                        issues. Actually delivers the 99% uptime promise."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Server 487 • K35</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Switched from another service after constant crashes. Night and day
+                        difference. Custom settings actually work the way I need them to."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Server 612 • K33</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The $35 tier is worth every penny. Rally participation went up
+                        significantly. Alt development is actually managed properly."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Server 289 • K36</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Support is legit. Made adjustment requests at 2am, got response within
+                        20 minutes. Settings changed exactly how I asked."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Server 523 • K34</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Premium tier rally card management is insane. Auto-joins optimized
+                        rallies perfectly. Haven't manually joined in weeks."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Server 701 • K37</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Finally found someone who understands what serious grinders need. Not
+                        some preset bot. Actual customization that works."</p>
+                    <div class="testimonial-author">
+                        <span class="author-name">Server 156 • K35</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -600,12 +746,14 @@
                     <h3>Discord</h3>
                     <p>Primary contact method. Fastest response time.</p>
                 </a>
-                <a href="https://t.me/dexter58?text=Hi!%20I'm%20interested%20in%20your%20Evony%20automation%20service.%20I'd%20like%20to%20know%20more%20about%20the%20pricing%20and%20setup%20process." class="contact-card" target="_blank">
+                <a href="https://t.me/dexter58?text=Hi!%20I'm%20interested%20in%20your%20Evony%20automation%20service.%20I'd%20like%20to%20know%20more%20about%20the%20pricing%20and%20setup%20process."
+                    class="contact-card" target="_blank">
                     <span class="contact-icon">📱</span>
                     <h3>Telegram</h3>
                     <p>Alternative contact. Also monitored regularly.</p>
                 </a>
-                <a href="mailto:dexteraltservice@gmail.com?subject=Evony%20Automation%20Service%20Inquiry&body=Hi,%0D%0A%0D%0AI'm%20interested%20in%20your%20Evony%20automation%20service.%0D%0A%0D%0AMy%20details:%0D%0A-%20Server:%20%0D%0A-%20Current%20Keep%20Level:%20%0D%0A-%20Interested%20in%20tier:%20%0D%0A%0D%0APlease%20let%20me%20know%20the%20next%20steps.%0D%0A%0D%0AThanks!" class="contact-card">
+                <a href="mailto:dexteraltservice@gmail.com?subject=Evony%20Automation%20Service%20Inquiry&body=Hi,%0D%0A%0D%0AI'm%20interested%20in%20your%20Evony%20automation%20service.%0D%0A%0D%0AMy%20details:%0D%0A-%20Server:%20%0D%0A-%20Current%20Keep%20Level:%20%0D%0A-%20Interested%20in%20tier:%20%0D%0A%0D%0APlease%20let%20me%20know%20the%20next%20steps.%0D%0A%0D%0AThanks!"
+                    class="contact-card">
                     <span class="contact-icon">📧</span>
                     <h3>Email</h3>
                     <p>For detailed inquiries or documentation.
@@ -622,7 +770,7 @@
 
     <script>
         // Smooth scroll for CTA button
-        document.querySelector('.cta-button').addEventListener('click', function(e) {
+        document.querySelector('.cta-button').addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector('#contact').scrollIntoView({
                 behavior: 'smooth'
@@ -635,7 +783,7 @@
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.style.opacity = '1';
@@ -649,4 +797,5 @@
         });
     </script>
 </body>
+
 </html>
