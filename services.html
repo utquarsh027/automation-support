@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Evony 24/7 Automation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index3.html" class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00fff7;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#logoGrad)" stroke-width="3"/>
+                    <path d="M 30 35 L 50 50 L 30 65 M 50 35 L 70 50 L 50 65" fill="none" stroke="url(#logoGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="50" cy="50" r="8" fill="url(#logoGrad)"/>
+                </svg>
+                <span class="logo-text"><span class="highlight">DEXTER</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index3.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="#" onclick="toggleContactPopup(); return false;" class="nav-cta">CONTACT US</a>
+            </div>
+            <div class="mobile-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Contact Button -->
+    <div class="floating-contact">
+        <button class="float-btn" onclick="toggleContactPopup()">
+            💬
+            <span class="tooltip">Contact Us</span>
+        </button>
+    </div>
+
+    <!-- Contact Popup -->
+    <div class="popup-overlay" id="popupOverlay" onclick="toggleContactPopup()"></div>
+    <div class="contact-popup" id="contactPopup">
+        <div class="popup-header">
+            <button class="popup-close" onclick="toggleContactPopup()">×</button>
+            <h2>Get Started Today</h2>
+            <p>Choose your preferred contact method</p>
+        </div>
+        <div class="popup-content">
+            <a href="https://discord.gg/CwqHmZZZbe" class="contact-method" target="_blank">
+                <span class="contact-method-icon">💬</span>
+                <h3>Discord</h3>
+                <p>Primary contact method. Fastest response time.</p>
+                <span class="contact-info">Join our Discord server</span>
+            </a>
+            <a href="https://t.me/dexter58" class="contact-method" target="_blank">
+                <span class="contact-method-icon">📱</span>
+                <h3>Telegram</h3>
+                <p>Alternative contact. Also monitored regularly.</p>
+                <span class="contact-info">@dexter58</span>
+            </a>
+            <a href="mailto:dexteraltservice@gmail.com" class="contact-method">
+                <span class="contact-method-icon">📧</span>
+                <h3>Email</h3>
+                <p>For detailed inquiries or documentation.</p>
+                <span class="contact-info">dexteraltservice@gmail.com</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Services Page Content -->
+    <section style="padding: 120px 20px 100px;">
+        <div class="container">
+            <h2 class="section-title">What We Provide</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>24×7 Automation</h3>
+                    <p>Your Evony accounts run continuously on dedicated infrastructure. No interruptions, no downtime, no missed rallies.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Custom Configuration</h3>
+                    <p>Every setting tailored to your playstyle. Not presets—actual customization based on your specific goals and strategy.</p>
+                </div>
+                <div class="service-card">
+                    <h3>99% Stable Uptime</h3>
+                    <p>Infrastructure built for reliability. Continuous monitoring and immediate response to any issues that arise.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Hands-On Management</h3>
+                    <p>Active monitoring and adjustments. This isn't a set-it-and-forget-it service—We keep your accounts optimized.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Advanced Optimization</h3>
+                    <p>Strategic resource management and rally timing. Maximizing efficiency across all your accounts and alts.</p>
+                </div>
+                <div class="service-card">
+                    <h3>24×7 Tech Support</h3>
+                    <p>Direct access to me for questions, adjustments, or issues. Fast response times when you need changes made.</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 60px;">
+                <button class="cta-button" onclick="toggleContactPopup()">GET STARTED NOW</button>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>Evony 24/7 Automation Service • Professional Account Management</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
